@@ -1,0 +1,17 @@
+import RPi.GPIO as GPIO
+import time
+
+pinNum = input('Enter a GPIO pin number: ')
+
+ledPin = GPIO.LOW(pinNum)
+
+GPIO.setmode(GPIO.BCM)
+GP
+GPIO.setup(5,GPIO.IN)
+GPIO.output(pinNum,GPIO.LOW)
+while True:
+	input_state = GPIO.input(5)
+	if input_state == False:
+		GPIO.output(pinNum,GPIO.HIGH)
+		
+GPIO.cleanup()
